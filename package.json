@@ -43,6 +43,7 @@
     "stat-mode": "^0.2.2"
   },
   "dependencies": {
-    "formidable": "^1.2.1"
+    "formidable": "^1.2.1",
+    "mv": "^2.1.1"
   }
 }
