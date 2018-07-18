@@ -41,5 +41,8 @@
     "parallelshell": "^3.0.2",
     "rimraf": "^2.6.2",
     "stat-mode": "^0.2.2"
+  },
+  "dependencies": {
+    "formidable": "^1.2.1"
   }
 }
