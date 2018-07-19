@@ -11,7 +11,6 @@ exports.upload = function(request, response) {
 	form.uploadDir = "./uploaded_files"; 
 	form.keepExtensions = true;
 	form.parse(request, function(error, fields, files){
-		
 		urlFile = "uploaded_files/" + files.upload.name;
 		urlFile = urlFile.toString();
 		
@@ -44,7 +43,7 @@ exports.error = function(request, response) {
 }
 
 exports.show = function(request, response) {
-    fs.readFile("test.png", "binary", function(error, file) {
+    fs.readFile(urlFile, "binary", function(error, file) {
         response.writeHead(200, {"Content-Type": "image/png"});
         response.write(file, "binary");
         response.end();
